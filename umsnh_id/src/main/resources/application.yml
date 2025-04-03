@@ -1,0 +1,21 @@
+spring:
+    application:
+        name: umsnhid
+    datasource:
+        url: jdbc:mysql://localhost:3306/umsnh_id
+        username: yxheldb
+        password: joel123
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        maximum-pool-size: 10
+        pool-name: "umsnh_id"
+    security:
+        user:
+            name: joel
+            password: 123
+
+server:
+    port: 8081
+
+jwt:
+    secret: "2174114221e7f989c275575503db21c3578772c85225f13d8efef4841a36e4afb279a527d77d91422fe2cd1f614c32219f907aa9ee7b0334f98aeb4b4d4557a40aba7ea9095acb347a807b33bfccde61518b9ecf0b2276db546b417792b90879aeb6f8979216073618b7853bc61427d9f18def0888091c54709005e62a51a0adc94cb8c100b88b8f064a2841640233d90e47733050ffa1fb2f7aba6e813d40df2b9da34f566f1e4ed426625bf04c8becd2e08f199f5530605c1aaa0459f9a6f56c572ee9794b734211f9c76fcebe22bafc0c58ba32318b5c073e3486e7f85359ef410a42acb00f8464fddf556182ecfd16c60cf7688acc1f7b776f70fe400289"
+    expiration: 86400000 # 24 horas en milisegundos
